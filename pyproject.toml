@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "stock-trading-alert"
+version = "0.1.0"
+description = """An app that notifies you via Telegram if there is a significant \
+change in the stock of your favorite company in the last 2 days."""
+authors = ["Igor Ferreira <iferreira.n01@gmail.com>"]
+readme = "README.md"
+packages = [{include = "stock_trading_alert"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
