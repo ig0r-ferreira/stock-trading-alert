@@ -1,8 +1,7 @@
 [tool.poetry]
 name = "stock-trading-alert"
 version = "0.1.0"
-description = """An app that notifies you via Telegram if there is a significant \
-change in the stock of your favorite company in the last 2 days."""
+description = "A script that notifies Telegram of a change of more than 5% in the stock price of the chosen company."
 authors = ["Igor Ferreira <iferreira.n01@gmail.com>"]
 readme = "README.md"
 packages = [{include = "stock_trading_alert"}]
@@ -12,6 +11,9 @@ python = "^3.10"
 requests = "^2.28.1"
 python-dotenv = "^0.21.0"
 pytz = "^2022.2.1"
+numpy = "^1.23.3"
+pandas = "^1.5.0"
+pydantic = "^1.10.2"
 
 
 [build-system]
